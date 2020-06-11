@@ -1,0 +1,35 @@
+{
+  "tsserver.npm": "/usr/local/bin/npm",
+  "tsserver.log": "verbose",
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+  "javascript.suggest.completeFunctionCalls": true,
+  "css.colorDecorators.enable": false,
+  "scss.colorDecorators.enable": false,
+  "coc.preferences.colorSupport": false,
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "cuda",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        }
+      }
+    }
+  }
+}

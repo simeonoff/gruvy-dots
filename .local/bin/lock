@@ -1,0 +1,62 @@
+#!/bin/sh
+
+B='#00000000'  # blank
+C='#a8998422'  # clear ish
+D='#928374ff'  # default
+T='#ebdbb2ff'  # text
+W='#cc241dbb'  # wrong
+V='#458588ff'  # verifying
+BG='#282828ff' # background color
+BAR='#1d202100' # bar background color
+
+setxkbmap us && \
+/usr/bin/i3lock \
+--color=$BG   \
+--insidevercolor=$C   \
+--ringvercolor=$V     \
+\
+--insidewrongcolor=$C \
+--ringwrongcolor=$W   \
+\
+--insidecolor=$B      \
+--ringcolor=$D        \
+--linecolor=$B        \
+--separatorcolor=$D   \
+\
+--verifcolor=$T        \
+--wrongcolor=$T        \
+--timecolor=$T        \
+--datecolor=$T        \
+--layoutcolor=$T      \
+--keyhlcolor=$W       \
+--bshlcolor=$W        \
+--bar-color=$BG \
+\
+--image="$HOME/Nextcloud/Wallpapers/gruvbox.png" \
+--screen 1            \
+--bar-indicator            \
+--bar-position="839"          \
+--clock               \
+--timestr="%H:%M"  \
+--datestr="%d %b, %Y" \
+--ignore-empty-password \
+--datepos="1470:780" \
+--timepos="1470:740" \
+--time-align 2 \
+--date-align 2 \
+--timesize="72" \
+--datesize="36" \
+--noinputtext="" \
+--veriftext="" \
+--wrongtext="" \
+#--noinputtext="D'oh!" \
+#--veriftext="Bip Bop Bip" \
+#--wrongtext="(✖╭╮✖)" \
+#--no-verify \
+#--blur=5 \
+#--keylayout 0         \
+#--textsize=20 \
+# --modsize=10
+# --timefont=comic-sans
+# --datefont=monofur
+# etc

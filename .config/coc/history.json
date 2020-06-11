@@ -1,0 +1,17 @@
+{
+  "marketplace": {
+    "%2Fhome%2Fsimeonoff%2FNextcloud%2FDocuments%2FPersonal%2FDotFiles%2Fconfig": [
+      "tsserver",
+      "css",
+      "html",
+      "json",
+      "emmet",
+      "eslint",
+      "styled",
+      "tslint"
+    ],
+    "%2Fhome%2Fsimeonoff": [
+      "rust"
+    ]
+  }
+}

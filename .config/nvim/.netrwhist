@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/simeonoff/Projects/igniteui-angular/projects/igniteui-angular/src/lib/core/styles/typography'
+let g:netrw_dirhist_1='/home/simeonoff/Projects/igniteui-angular/projects/igniteui-angular/src/lib/core/styles/themes'
+let g:netrw_dirhist_0='/home/simeonoff/Projects/igniteui-angular/projects/igniteui-angular/src/lib/core/styles/base'
+let g:netrw_dirhist_9='/home/simeonoff/Projects/igniteui-angular/projects/igniteui-angular/src/lib/core/styles'
+let g:netrw_dirhist_8='/home/simeonoff/Projects/igniteui-angular/projects/igniteui-angular/src/lib/core/styles/typography'
+let g:netrw_dirhist_7='/home/simeonoff/.config/polybar'
+let g:netrw_dirhist_6='/home/simeonoff/.config/polybar/scripts'
+let g:netrw_dirhist_5='/home/simeonoff'
+let g:netrw_dirhist_4='/home/simeonoff/.config'
+let g:netrw_dirhist_3='/home/simeonoff/.config/i3'

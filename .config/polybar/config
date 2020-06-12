@@ -17,10 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #282828
 background-alt = #928374
-;foreground = ${xrdb:color7:#222}
 foreground = #ebdbb2
 foreground-alt = #a89984
 primary = #d79921
@@ -28,11 +26,8 @@ secondary = #b16286
 alert = #fb4934
 
 [bar/main]
-;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 32
-;offset-x = 1%
-;offset-y = 1%
 radius = 0
 fixed-center = true
 bottom = true
@@ -64,13 +59,9 @@ tray-position = right
 tray-padding = 0
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
 ;wm-restack = i3
 
 ;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
@@ -88,15 +79,12 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-#format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-#label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
-#label-indicator-underline = ${colors.secondary}
 
 [module/filesystem]
 type = internal/fs
@@ -114,9 +102,6 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
 label-mode-padding = 2
 label-mode-foreground = #000
 label-mode-background = ${colors.primary}
@@ -125,7 +110,6 @@ label-mode-background = ${colors.primary}
 label-focused = %index%
 label-focused-background = ${colors.primary}
 label-focused-foreground = ${colors.background}
-#label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -169,6 +153,7 @@ ramp-1 = 🌔
 ramp-2 = 🌓
 ramp-3 = 🌒
 ramp-4 = 🌑
+
 ; Use the following command to list available cards:
 ; $ ls -1 /sys/class/backlight/
 card = intel_backlight
@@ -190,7 +175,6 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-#format-underline = #f90000
 label = %percentage:2%%
 
 [module/memory]
@@ -198,23 +182,16 @@ type = internal/memory
 interval = 2
 format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-#format-underline = #4bffdc
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
 interface = wlp2s0
 interval = 3.0
-
 format-connected = <ramp-signal> <label-connected>
-#format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
@@ -228,7 +205,6 @@ type = internal/network
 interface = virbr0-nic
 interval = 3.0
 
-#format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -252,7 +228,6 @@ time-alt = %H:%M
 format-prefix = 
 format-prefix-foreground = ${colors.primary}
 label-foreground = ${colors.primary}
-#format-underline = #0a6cf5
 
 label = %date% %time%
 label-font = 3
@@ -305,15 +280,12 @@ full-at = 98
 time-format = %H:%M
 
 format-charging = <animation-charging> <label-charging>
-#format-charging-underline = #ffb52a
 
 format-discharging = <ramp-capacity> <label-discharging>
-#format-discharging-underline = ${self.format-charging-underline}
 
 label-charging = %percentage%%
 label-discharging = %time%
 
-#format-full-underline = ${self.format-charging-underline}
 ;
 ; Only applies if <ramp-capacity> is used
 ramp-capacity-0 = 
@@ -349,9 +321,7 @@ warn-temperature = 60
 format = <ramp> <label>
 #format-prefix = "T "
 #format-prefix-foreground = ${colors.foreground-alt}
-#format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
-#format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
